@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Votação</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="supabase.js"></script>
+</head>
+<body>
+
+<img src="assets/logo.png" class="logo">
+
+<div id="home" class="container">
+  <h1>Clique para iniciar</h1>
+</div>
+
+<div id="votacao" class="container hidden">
+  <h2>Escolha sua chapa</h2>
+  <div id="chapas" class="grid"></div>
+</div>
+
+<div id="confirmacao" class="container hidden">
+  <h2 id="nomeChapa"></h2>
+  <button onclick="confirmar()">Confirmar</button>
+  <button onclick="voltar()">Voltar</button>
+</div>
+
+<div id="final" class="container hidden">
+  <h1>Obrigado por votar!</h1>
+</div>
+
+<audio id="urna" src="assets/urna.mp3"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
