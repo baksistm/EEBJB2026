@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="supabase.js"></script>
+</head>
+<body>
+
+<img src="assets/logo.png" class="logo">
+
+<div id="login" class="container">
+  <input type="password" id="senha" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+</div>
+
+<div id="dashboard" class="container hidden">
+  <h2>Dashboard</h2>
+  <div id="resultados"></div>
+
+  <h3>Criar Chapa</h3>
+  <input id="nome" placeholder="Nome">
+  <input id="lema" placeholder="Lema">
+  <input id="logo" placeholder="URL da Logo">
+  <button onclick="criar()">Criar</button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
